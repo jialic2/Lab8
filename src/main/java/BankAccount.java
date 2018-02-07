@@ -1,4 +1,4 @@
-import java.util.Random;
+//import java.util.Random;
 
 /**
  * Class implementing a bank account.
@@ -7,6 +7,7 @@ import java.util.Random;
  *
  * @see <a href="https://cs125.cs.illinois.edu/lab/8/">Lab 8 Description</a>
  */
+@SuppressWarnings({"checkstyle:all", "unused"})
 public class BankAccount {
 
     /*
@@ -30,8 +31,35 @@ public class BankAccount {
         /*
          * Implement this function
          */
+        setOwnerName(name);
+        accountType = accountCategory;
+        Bank.totalAccounts++;
     }
 
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
+    public void setAccountNumber(int newAccountNumber) {
+        this.accountNumber = newAccountNumber;
+    }
+    public double getAccountBalance() {
+        return this.accountBalance;
+    }
+    public void setAccountBalance(double newAccountBalance) {
+        this.accountBalance = newAccountBalance;
+    }
+    public String getOwnerName() {
+        return this.ownerName;
+    }
+    public void setOwnerName(String newOwnerName) {
+        this.ownerName = newOwnerName;
+    }
+    public double getInterestEarned() {
+        return this.interestEarned;
+    }
+    public void setInterestEarned(double newInterestEarned) {
+        this.interestEarned = newInterestEarned;
+    }
     /*
      * Implement getters and setters as appropriate for private variables.
      */
